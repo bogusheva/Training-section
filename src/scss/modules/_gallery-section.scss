@@ -1,0 +1,10 @@
+.gallery-section-holder {
+  padding: 120px 25px;
+
+  @include tablet-view {
+    padding: 120px 50px;
+  }
+  @include desktop-view {
+    padding: 120px 120px;
+  }
+}

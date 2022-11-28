@@ -1,0 +1,11 @@
+.footer-holder {
+  padding: 25px 25px;
+
+  @include tablet-view {
+    padding: 25px 50px;
+  }
+  @include desktop-view {
+    padding: 25px 120px;
+    font-size: $font-size-small-2;
+  }
+}

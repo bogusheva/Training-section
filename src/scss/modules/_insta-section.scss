@@ -1,0 +1,9 @@
+.insta-section {
+  padding: 0 25px;
+  @include tablet-view {
+    padding: 0 50px;
+  }
+  @include desktop-view {
+    padding: 0 120px;
+  }
+}

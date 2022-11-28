@@ -1,0 +1,48 @@
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+a {
+  text-decoration: none;
+}
+img {
+  max-width: 100%;
+}
+h2 {
+  font-size: $font-size-large-2;
+  line-height: 1.15;
+  color: $text-accent;
+  padding: 10px 0 60px;
+  font-weight: $weight;
+}
+.body-container {
+  max-width: 1440px;
+  width: 100%;
+  margin: 0 auto;
+  background-color: $background;
+  color: $text-primary;
+  font-family: $font-main;
+  font-weight: $weight;
+  letter-spacing: $space-xs;
+  text-align: center;
+}
+.pseudo-title {
+  font-size: $font-size-small-2;
+  text-transform: uppercase;
+  line-height: 1.9;
+  letter-spacing: $space-m;
+  color: $text-secondary;
+}
+
+.section-text-holder {
+  padding: 120px 25px;
+
+  @include tablet-view {
+    padding: 120px 50px;
+  }
+  @include desktop-view {
+    padding: 120px 120px;
+  }
+}

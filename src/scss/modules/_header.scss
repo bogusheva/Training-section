@@ -1,0 +1,12 @@
+.header {
+  .header-container {
+    padding: 14px 25px;
+
+    @include tablet-view {
+      padding: 14px 50px;
+    }
+    @include desktop-view {
+      padding: 14px 120px;
+    }
+  }
+}

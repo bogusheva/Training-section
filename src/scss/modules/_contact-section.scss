@@ -1,0 +1,10 @@
+.contact-holder {
+  padding: 120px 25px 0;
+
+  @include tablet-view {
+    padding: 120px 50px 0;
+  }
+  @include desktop-view {
+    padding: 120px 120px 0;
+  }
+}

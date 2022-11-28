@@ -1,0 +1,34 @@
+//Breakpoints for forming queries for different modes: mobile, tablet, desktop
+$width-desktop: 1024px;
+$width-tablet: 768px;
+
+//colors
+$background: #000000; /*black*/
+$text-primary: #ffffff; /*white*/
+$text-secondary: #aca592; /*grey*/
+$text-accent: #ffae2b; /*orange*/
+$border-accent: #4b4136; /*brown*/
+
+//font-family
+$font-main: "old_standard_tt";
+$font-family-fallback: sans-serif;
+
+//font-size
+$font-size-small-1: 11px;
+$font-size-small-2: 12px;
+$font-size-small-3: 13px;
+$font-size-middle-1: 15px;
+$font-size-middle-2: 22px;
+$font-size-middle-3: 24px;
+$font-size-large-1: 40px;
+$font-size-large-2: 60px;
+$font-size-large-3: 70px;
+
+//font-weight
+$weight: 400;
+$weight-bold: 700;
+
+//font-spacing
+$space-xs: 0;
+$space-s: 0.01em;
+$space-m: 0.02em;
