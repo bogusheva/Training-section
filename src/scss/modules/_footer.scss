@@ -1,5 +1,13 @@
 .footer-holder {
   padding: 25px 25px;
+  margin-top: 40px;
+  border-top: 1px solid $border-accent;
+  font-size: $font-size-small-1;
+  justify-content: space-between;
+  line-height: 2;
+  text-align: left;
+  color: $text-secondary;
+  display: flex;
 
   @include tablet-view {
     padding: 25px 50px;
@@ -7,5 +15,25 @@
   @include desktop-view {
     padding: 25px 120px;
     font-size: $font-size-small-2;
+  }
+
+  .footer-info-references {
+    list-style: none;
+    display: flex;
+    gap: 11px;
+    font-size: $font-size-small-1;
+    line-height: 2.4;
+    .references-list::after {
+      content: "|";
+      padding-left: 10px;
+    }
+    .references-list:last-child:after {
+      content: "";
+      padding-left: 0;
+    }
+  }
+
+  a {
+    color: $text-accent;
   }
 }
