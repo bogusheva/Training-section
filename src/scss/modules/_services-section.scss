@@ -1,23 +1,53 @@
 .our-services {
-    padding: 120px 0;
+    padding: 100px 0;
     .container {
         max-width: 1200px;
         width: 100%;
         padding: 0 15px;
         margin: 0 auto;
-        
+    }
+
+    .title {
+        font-size: 48px;
+        padding: 0 0 40px;
+        @media screen and (min-width: 768px) {
+            font-size: $font-size-large-2;
+            line-height: 1.15;
+            color: $text-accent;
+            padding: 10px 0 60px;
+            font-weight: $weight;
+        }
     }
 
     .card {
         width: 100%;
-        display: flex;
+        @media screen and  (min-width: 768px) {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+            gap: 10px;
+        }
+        @media screen and  (min-width: 1024px) {
+            gap: 0;
+        }
     }
     
     .card-item {
-        text-align: startпше;
-        width: calc(100% / 3);
-        padding: 61px;
+        text-align: center;
+        margin-bottom: 20px;
+        padding: 20px;
         border: 1px solid #4B4136;
+
+        @media screen and  (min-width: 768px) {
+            padding: 40px;
+            width: calc((100% / 2) - 40px);
+        }
+        @media screen and (min-width: 1024px) {
+            width: calc(100% / 3);
+            padding: 60px;
+            margin: 0;
+            text-align: start;
+        }
     }
 
     .card-icon {
