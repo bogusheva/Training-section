@@ -220,18 +220,49 @@ h2 {
   }
 }
 
+/*black*/
+/*white*/
+/*grey*/
+/*orange*/
+/*brown*/
+.header {
+  font-family: "old_standard_tt";
+  color: #ffae2b;
+  text-transform: uppercase;
+}
 .header .header-container {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: nowrap;
+      flex-wrap: nowrap;
+  gap: 100px;
   padding: 14px 25px;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
 }
-@media (min-width: 768px) and (max-width: 1023px) {
-  .header .header-container {
-    padding: 14px 50px;
-  }
+.header .header-container .nav-list {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: nowrap;
+      flex-wrap: nowrap;
+  -webkit-box-pack: start;
+      -ms-flex-pack: start;
+          justify-content: start;
+  gap: 40px;
 }
-@media (min-width: 1024px) {
-  .header .header-container {
-    padding: 14px 120px;
-  }
+.header .header-container .nav-list .nav-item {
+  color: #aca592;
+}
+.header .header-container .logo-holder {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: nowrap;
+      flex-wrap: nowrap;
+  padding-left: 120px;
 }
 
 .button {
