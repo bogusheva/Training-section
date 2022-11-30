@@ -1,12 +1,32 @@
-.header {
-  .header-container {
-    padding: 14px 25px;
+@import "../base/variables";
 
-    @include tablet-view {
-      padding: 14px 50px;
+.header {
+  font-family: $font-main;
+  color: $text-accent;
+  text-transform: uppercase;
+
+  .header-container {
+    display: flex;
+    flex-wrap: nowrap;
+    gap: 100px;
+    padding: 14px 25px;
+    align-items: center;
+
+    .nav-list {
+      display: flex;
+      flex-wrap: nowrap;
+      justify-content: start;
+      gap: 40px;
+
+      .nav-item {
+        color: $text-secondary;
+      }
     }
-    @include desktop-view {
-      padding: 14px 120px;
+
+    .logo-holder {
+      display: flex;
+      flex-wrap: nowrap;
+      padding-left: 120px;
     }
   }
 }
