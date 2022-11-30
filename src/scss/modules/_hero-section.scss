@@ -1,1 +1,83 @@
+//Serhiienko Iryna
 
+.hero-section {
+  padding: 60px 10px 1px;
+  @include size(100%, 602px);
+  background-repeat: no-repeat;
+  background-position: 50% 50%;
+
+  @media screen and (min-width: 768px) {
+    padding: 120px 10px 0;
+  }
+
+  .text-holder {
+    @include font-setting(
+      $font-main,
+      normal,
+      $weight,
+      $font-size-small-2,
+      22px,
+      2px,
+      $text-accent
+    );
+    text-transform: uppercase;
+    text-align: center;
+    margin-bottom: 15px;
+
+    &:hover {
+      color: $text-primary;
+      text-shadow: 1px 1px 2px $background;
+      transform: scale(1.3);
+    }
+  }
+
+  h1 {
+    margin: 0 auto;
+    @include size-m-w(869px, auto);
+    @include font-setting(
+      $font-main,
+      normal,
+      $weight,
+      $font-size-large-2,
+      60px,
+      1px,
+      $text-primary
+    );
+    text-shadow: rgb(136, 135, 222);
+    text-align: center;
+    margin-bottom: 35px;
+    text-shadow: 1px 1px 2px pink;
+
+    @include tablet-view {
+      font-size: $font-size-large-3;
+      line-height: 80px;
+    }
+
+    &:hover {
+      color: rgb(154, 128, 10);
+      text-shadow: 1px 1px 2px $background;
+    }
+  }
+
+  .button {
+    cursor: pointer;
+
+    &:hover {
+      background-color: rgb(234, 214, 58);
+      color: $text-primary;
+      text-shadow: 1px 1px 2px $background;
+    }
+
+    a {
+      @include font-setting(
+        $font-main,
+        normal,
+        $weight,
+        $font-size-small-1,
+        22px,
+        1px,
+        #181511
+      );
+    }
+  }
+}
