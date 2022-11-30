@@ -7,3 +7,91 @@
     padding: 0 120px;
   }
 }
+
+.insta-section-holder {
+  display: grid;
+  gap: 2px;
+  justify-content: center;
+  padding: 21px 0;
+  grid-template-areas:
+    "block-1 block-2"
+    "block-3 block-3"
+    "block-4 block-5";
+
+  border-top: 1px solid $border-accent;
+
+  @include tablet-view {
+    grid-template-areas: "block-1 block-2 block-3 block-4 block-5";
+  }
+  @include desktop-view {
+    grid-template-areas: "block-1 block-2 block-3 block-4 block-5";
+  }
+
+  .insta-middle-item {
+    width: 100%;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: contain;
+    display: flex;
+    flex-direction: column;
+    grid-area: block-3;
+    justify-content: center;
+    gap: 10px;
+    padding: 60px 0;
+
+    @include tablet-view {
+      padding: 0 20px;
+    }
+    @include desktop-view {
+      gap: 20px;
+      padding: 0 49px;
+    }
+
+    h3 {
+      color: $text-accent;
+      font-size: $font-size-large-1;
+      line-height: 1.25;
+      font-weight: $weight;
+    }
+  }
+  .insta-item-1 {
+    grid-area: block-1;
+  }
+  .insta-item-2 {
+    grid-area: block-2;
+  }
+  .insta-item-4 {
+    grid-area: block-4;
+  }
+  .insta-item-5 {
+    grid-area: block-5;
+  }
+}
+.insta-image-holder {
+  position: relative;
+  .insta-follow {
+    position: absolute;
+    width: 50px;
+    height: 50px;
+    top: 0;
+    background-color: $background;
+    border-radius: 17px;
+    left: calc(50% - 15px);
+    @include tablet-view {
+      background-color: transparent;
+      border-radius: 0;
+      width: 30px;
+      height: 30px;
+      top: -20px;
+      left: calc(50% - 15px);
+    }
+    @include desktop-view {
+      background-color: transparent;
+      border-radius: 0;
+      width: 50px;
+      height: 50px;
+      top: -35px;
+      left: calc(50% - 25px);
+    }
+  }
+}
